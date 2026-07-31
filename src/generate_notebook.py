@@ -266,7 +266,7 @@ def build_notebook():
         "bp = axes[1].boxplot(\n",
         "    [df_analysis[df_analysis['Churn_Binary']==0]['MonthlyCharges'],\n",
         "     df_analysis[df_analysis['Churn_Binary']==1]['MonthlyCharges']],\n",
-        "    labels=['Not Churned', 'Churned'],\n",
+        "    tick_labels=['Not Churned', 'Churned'],\n",
         "    patch_artist=True,\n",
         "    boxprops=dict(facecolor='#E3F2FD'),\n",
         "    medianprops=dict(color='#FF5722', linewidth=2)\n",

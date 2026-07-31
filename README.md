@@ -2,8 +2,7 @@
 
 Predict which telecom customers are likely to churn using machine learning classification models, with comprehensive EDA, model comparison, and an interactive Streamlit dashboard.
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://customer-churn-prediction-demo.streamlit.app)
-*(Note: Replace the link above with your deployed Streamlit Community Cloud URL)*
+📓 **[View Full EDA Notebook](https://github.com/ShadowCreations5/customer-churn-prediction/blob/main/notebooks/churn_analysis.ipynb)** &nbsp;|&nbsp; 📊 **[View Project Report](https://github.com/ShadowCreations5/customer-churn-prediction/blob/main/reports/Project_Report.md)**
 
 ---
 
@@ -115,13 +114,13 @@ The dashboard will open in your browser. Use the sidebar to input customer detai
 
 ### Model Comparison
 
-| Model | ROC-AUC |
-|-------|---------|
-| Logistic Regression | See report |
-| Random Forest | See report |
-| XGBoost | See report |
+| Model | Accuracy | Precision | Recall | F1 Score | ROC-AUC |
+|-------|----------|-----------|--------|----------|----------|
+| **Logistic Regression** | 0.7402 | 0.5069 | 0.7861 | 0.6164 | **0.8414** |
+| XGBoost | 0.7559 | 0.5282 | 0.7513 | 0.6203 | 0.8312 |
+| Random Forest | 0.7637 | 0.5463 | 0.6471 | 0.5924 | 0.8261 |
 
-> **Note:** Run the pipeline (`python src/run_all.py`) to populate the actual metrics. The best model is automatically selected by ROC-AUC and saved to `models/best_model.pkl`.
+> **Best Model:** Logistic Regression with ROC-AUC of **0.8414** — saved to `models/best_model.pkl`.
 
 ### Key Findings
 - **26.5% overall churn rate** — moderate class imbalance addressed with balanced weights
