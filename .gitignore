@@ -1,0 +1,34 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Environment files
+.env
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+
+# NOTE: data/raw/*.csv is NOT ignored — we keep the dataset in the repo
+# for reproducibility as it is publicly sourced data.
